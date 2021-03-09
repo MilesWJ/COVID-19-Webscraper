@@ -42,7 +42,7 @@ def decide_data():
                 f"\nUnited States COVID-19 vaccine administration count: {data}")
             break
         else:
-            print("Invalid data selector...")
+            print(f'Invalid data selector "{decide}". 1, 2, or 3.')
             continue
 
 
