@@ -21,7 +21,7 @@ def retrieve_data(data):
             EC.presence_of_element_located((By.ID, data))
         ).text
         return search
-    finally:
+    except:
         DRIVER.quit()
 
 
