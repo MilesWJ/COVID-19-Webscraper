@@ -30,16 +30,16 @@ def decide_data():
         decide = abs(int(input("\n1. Total amount of COVID-19 cases in United States\n2. Total amount of COVID-19 related deaths in the United States\n3. Total amount of administered vaccines in the United States\nEnter the data number you would like to view: ")))
         if decide == 1:
             data = retrieve_data(CASES)
-            print(f"\nUnited States COVID-19 case count: {data}")
+            print(f"\nUnited States COVID-19 case count: {data}.")
             break
         elif decide == 2:
             data = retrieve_data(DEATHS)
-            print(f"\nUnited States COVID-19 related death count: {data}")
+            print(f"\nUnited States COVID-19 related death count: {data}.")
             break
         elif decide == 3:
             data = retrieve_data(VACCINES)
             print(
-                f"\nUnited States COVID-19 vaccine administration count: {data}")
+                f"\nUnited States COVID-19 vaccine administration count: {data}.")
             break
         else:
             print(f'Invalid data selector "{decide}". 1, 2, or 3.')
