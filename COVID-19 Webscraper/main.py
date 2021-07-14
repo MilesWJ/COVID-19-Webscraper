@@ -39,7 +39,16 @@ def retrieve_data(data):
         ).text
         return search
     except:
-        print(f"\nAn error has occurred while searching for {data}.")
+        if data == "status-cases-total":
+            print(
+                f"\nAn error has occurred while searching for total cases! HTML ELEMENT: {data}.")
+        elif data == "status-deaths-total":
+            print(
+                f"\nAn error has occurred while searching for total cases! HTML ELEMENT: {data}.")
+        else:
+            print(
+                f"\nAn error has occurred while searching for total administered vaccines! HTML ELEMENT: {data}.")
+
         DRIVER.quit()
 
 
